@@ -15,6 +15,8 @@
 		781E8D4D1FB9E81E00428872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781E8D4B1FB9E81E00428872 /* LaunchScreen.storyboard */; };
 		781E8D581FB9E81E00428872 /* MealPlanAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 781E8D571FB9E81E00428872 /* MealPlanAppTests.m */; };
 		781E8D631FB9E81E00428872 /* MealPlanAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 781E8D621FB9E81E00428872 /* MealPlanAppUITests.m */; };
+		7827C83F1FBDBC27000D9B55 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827C83E1FBDBC27000D9B55 /* DataModel.m */; };
+		7827C8421FBDBCFB000D9B55 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827C8411FBDBCFB000D9B55 /* Ingredient.m */; };
 		783822FD1FBC797C00A92248 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783822FC1FBC797C00A92248 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,10 @@
 		781E8D5E1FB9E81E00428872 /* MealPlanAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlanAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		781E8D621FB9E81E00428872 /* MealPlanAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealPlanAppUITests.m; sourceTree = "<group>"; };
 		781E8D641FB9E81E00428872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7827C83D1FBDBC27000D9B55 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		7827C83E1FBDBC27000D9B55 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		7827C8401FBDBCFB000D9B55 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
+		7827C8411FBDBCFB000D9B55 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
 		783822FB1FBC797C00A92248 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
 		783822FC1FBC797C00A92248 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,10 @@
 				781E8D431FB9E81E00428872 /* ViewController.h */,
 				781E8D441FB9E81E00428872 /* ViewController.m */,
 				781E8D461FB9E81E00428872 /* Main.storyboard */,
+				7827C83D1FBDBC27000D9B55 /* DataModel.h */,
+				7827C83E1FBDBC27000D9B55 /* DataModel.m */,
+				7827C8401FBDBCFB000D9B55 /* Ingredient.h */,
+				7827C8411FBDBCFB000D9B55 /* Ingredient.m */,
 				781E8D491FB9E81E00428872 /* Assets.xcassets */,
 				781E8D4B1FB9E81E00428872 /* LaunchScreen.storyboard */,
 				781E8D4E1FB9E81E00428872 /* Info.plist */,
@@ -279,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				781E8D451FB9E81E00428872 /* ViewController.m in Sources */,
+				7827C83F1FBDBC27000D9B55 /* DataModel.m in Sources */,
 				781E8D421FB9E81E00428872 /* AppDelegate.m in Sources */,
 				781E8D3F1FB9E81E00428872 /* main.m in Sources */,
+				7827C8421FBDBCFB000D9B55 /* Ingredient.m in Sources */,
 				783822FD1FBC797C00A92248 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
