@@ -10,4 +10,7 @@
 
 @interface Ingredient : NSObject
 
+@property (nonatomic, strong) NSString *meal;
+@property (nonatomic, strong) NSString *listOfIngredients;
+
 @end

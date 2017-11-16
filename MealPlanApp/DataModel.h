@@ -11,4 +11,6 @@
 
 @interface DataModel : NSObject
 
+@property (strong, nonatomic) NSMutableArray *ingredients;
+
 @end
