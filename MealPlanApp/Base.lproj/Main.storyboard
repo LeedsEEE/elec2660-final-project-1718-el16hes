@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Recipes-->
+        <!--Recipe View Controller-->
         <scene sceneID="sEo-8C-oJt">
             <objects>
-                <viewController id="YQN-B0-OLc" sceneMemberID="viewController">
+                <viewController id="YQN-B0-OLc" customClass="RecipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2WQ-2Q-uvv"/>
                         <viewControllerLayoutGuide type="bottom" id="Yx1-Sd-P6p"/>
@@ -17,20 +17,40 @@
                     <view key="view" contentMode="scaleToFill" id="1YZ-gd-lCj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t90-4T-1AT">
+                                <frame key="frameInset" minX="165" minY="70" width="46" height="33"/>
+                                <state key="normal" title="Chilli"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJu-dG-3np">
+                                <frame key="frameInset" minX="163" minY="153" width="49" height="30"/>
+                                <state key="normal" title="Risotto"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FJu-dG-3np" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="PHZ-El-thq"/>
+                            <constraint firstItem="t90-4T-1AT" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="pzw-wX-Hlj"/>
+                            <constraint firstItem="FJu-dG-3np" firstAttribute="top" secondItem="t90-4T-1AT" secondAttribute="bottom" constant="50" id="rxp-NA-076"/>
+                            <constraint firstItem="t90-4T-1AT" firstAttribute="top" secondItem="2WQ-2Q-uvv" secondAttribute="bottom" constant="50" id="utw-4N-OeY"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Recipes" image="Plate.png" selectedImage="Plate.png" id="gMd-qM-TVO">
-                        <inset key="imageInsets" minX="120" minY="122" maxX="118" maxY="118"/>
+                    <tabBarItem key="tabBarItem" selectedImage="Plate.png" systemItem="bookmarks" id="gMd-qM-TVO">
+                        <inset key="imageInsets" minX="120" minY="122" maxX="120" maxY="122"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="ChilliButton" destination="t90-4T-1AT" id="xra-rr-1WA"/>
+                        <outlet property="RisottoButton" destination="FJu-dG-3np" id="XpJ-KT-3S6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pR-g9-FDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895" y="848"/>
+            <point key="canvasLocation" x="-895.20000000000005" y="846.9265367316342"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BJH-cq-dGi">
             <objects>
-                <tabBarController id="sDl-DZ-uaK" sceneMemberID="viewController">
+                <tabBarController autoresizesArchivedViewToFullSize="NO" id="sDl-DZ-uaK" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="9WK-xW-myS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="-1626" y="45"/>
         </scene>
-        <!--Shopping List-->
+        <!--List Table View Controller-->
         <scene sceneID="oxw-q4-j9g">
             <objects>
-                <tableViewController id="G8c-23-9NM" customClass="PlanTableViewController" sceneMemberID="viewController">
+                <tableViewController id="G8c-23-9NM" customClass="ListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="I6T-TO-OZk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,18 +98,18 @@
                             <outlet property="delegate" destination="G8c-23-9NM" id="tnL-1b-F4S"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Shopping List" image="Trolley.png" selectedImage="Trolley.png" id="64q-le-wpT">
-                        <inset key="imageInsets" minX="121" minY="120" maxX="115" maxY="115"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" selectedImage="Trolley.png" systemItem="more" id="64q-le-wpT">
+                        <inset key="imageInsets" minX="115" minY="120" maxX="115" maxY="120"/>
                     </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAp-ze-nrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895" y="45"/>
+            <point key="canvasLocation" x="-206" y="95"/>
         </scene>
-        <!--Meal Plan-->
+        <!--Plan Table View Controller-->
         <scene sceneID="D9I-aY-C6m">
             <objects>
-                <tableViewController id="DXo-MK-dOj" customClass="TableViewController" sceneMemberID="viewController">
+                <tableViewController id="DXo-MK-dOj" customClass="PlanTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" sectionHeaderHeight="28" sectionFooterHeight="28" id="ljh-9y-IuU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,8 +138,8 @@
                             <outlet property="delegate" destination="DXo-MK-dOj" id="26f-7N-6CQ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Meal Plan" image="Calendar.png" selectedImage="Calendar.png" id="MeL-E9-aL1">
-                        <inset key="imageInsets" minX="119" minY="122" maxX="118" maxY="117"/>
+                    <tabBarItem key="tabBarItem" selectedImage="Calendar.png" systemItem="favorites" id="MeL-E9-aL1">
+                        <inset key="imageInsets" minX="119" minY="122" maxX="119" maxY="121"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="yBq-fX-nJ4"/>

@@ -33,12 +33,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //Sets the number of columns
-    return 2;
+    return 7;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //Sets the number of rows
-    return 7;
+    return 1;
 }
 
 
