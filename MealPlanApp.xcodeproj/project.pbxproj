@@ -17,7 +17,8 @@
 		781E8D631FB9E81E00428872 /* MealPlanAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 781E8D621FB9E81E00428872 /* MealPlanAppUITests.m */; };
 		7827C83F1FBDBC27000D9B55 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827C83E1FBDBC27000D9B55 /* DataModel.m */; };
 		7827C8421FBDBCFB000D9B55 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827C8411FBDBCFB000D9B55 /* Ingredient.m */; };
-		783822FD1FBC797C00A92248 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783822FC1FBC797C00A92248 /* TableViewController.m */; };
+		783822FD1FBC797C00A92248 /* PlanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783822FC1FBC797C00A92248 /* PlanTableViewController.m */; };
+		78E66D851FC4386200B7DCB6 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E66D841FC4386200B7DCB6 /* ListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +59,10 @@
 		7827C83E1FBDBC27000D9B55 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		7827C8401FBDBCFB000D9B55 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
 		7827C8411FBDBCFB000D9B55 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
-		783822FB1FBC797C00A92248 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
-		783822FC1FBC797C00A92248 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		783822FB1FBC797C00A92248 /* PlanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanTableViewController.h; path = ../PlanTableViewController.h; sourceTree = "<group>"; };
+		783822FC1FBC797C00A92248 /* PlanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanTableViewController.m; path = ../PlanTableViewController.m; sourceTree = "<group>"; };
+		78E66D831FC4386200B7DCB6 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListTableViewController.h; path = ../ListTableViewController.h; sourceTree = "<group>"; };
+		78E66D841FC4386200B7DCB6 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListTableViewController.m; path = ../ListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +113,10 @@
 		781E8D3C1FB9E81E00428872 /* MealPlanApp */ = {
 			isa = PBXGroup;
 			children = (
-				783822FB1FBC797C00A92248 /* TableViewController.h */,
-				783822FC1FBC797C00A92248 /* TableViewController.m */,
+				783822FB1FBC797C00A92248 /* PlanTableViewController.h */,
+				783822FC1FBC797C00A92248 /* PlanTableViewController.m */,
+				78E66D831FC4386200B7DCB6 /* ListTableViewController.h */,
+				78E66D841FC4386200B7DCB6 /* ListTableViewController.m */,
 				781E8D401FB9E81E00428872 /* AppDelegate.h */,
 				781E8D411FB9E81E00428872 /* AppDelegate.m */,
 				781E8D431FB9E81E00428872 /* ViewController.h */,
@@ -291,9 +296,10 @@
 				781E8D451FB9E81E00428872 /* ViewController.m in Sources */,
 				7827C83F1FBDBC27000D9B55 /* DataModel.m in Sources */,
 				781E8D421FB9E81E00428872 /* AppDelegate.m in Sources */,
+				78E66D851FC4386200B7DCB6 /* ListTableViewController.m in Sources */,
 				781E8D3F1FB9E81E00428872 /* main.m in Sources */,
 				7827C8421FBDBCFB000D9B55 /* Ingredient.m in Sources */,
-				783822FD1FBC797C00A92248 /* TableViewController.m in Sources */,
+				783822FD1FBC797C00A92248 /* PlanTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

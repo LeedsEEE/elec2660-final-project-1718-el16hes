@@ -1,18 +1,18 @@
 //
-//  TableViewController.m
+//  ListTableViewController.m
 //  MealPlanApp
 //
-//  Created by Helen Simmonds [el16hes] on 15/11/2017.
+//  Created by Helen Simmonds [el16hes] on 21/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "ListTableViewController.h"
 
-@interface TableViewController ()
+@interface ListTableViewController ()
 
 @end
 
-@implementation TableViewController
+@implementation ListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,23 +33,23 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return 7;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
