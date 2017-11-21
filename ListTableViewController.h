@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ListTableViewController : UITableViewController
-@property (strong, nonatomic) DataModel *data;
+
 
 
 @end
