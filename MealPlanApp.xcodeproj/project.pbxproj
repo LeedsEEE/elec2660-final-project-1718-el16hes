@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7805E8841FC4732300281CCE /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7805E8811FC4732300281CCE /* Calendar.png */; };
+		7805E8851FC4732300281CCE /* Plate.png in Resources */ = {isa = PBXBuildFile; fileRef = 7805E8821FC4732300281CCE /* Plate.png */; };
+		7805E8861FC4732300281CCE /* Trolley.png in Resources */ = {isa = PBXBuildFile; fileRef = 7805E8831FC4732300281CCE /* Trolley.png */; };
 		781E8D3F1FB9E81E00428872 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 781E8D3E1FB9E81E00428872 /* main.m */; };
 		781E8D421FB9E81E00428872 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 781E8D411FB9E81E00428872 /* AppDelegate.m */; };
 		781E8D451FB9E81E00428872 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781E8D441FB9E81E00428872 /* ViewController.m */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7805E8811FC4732300281CCE /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calendar.png; path = ../Calendar.png; sourceTree = "<group>"; };
+		7805E8821FC4732300281CCE /* Plate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Plate.png; path = ../Plate.png; sourceTree = "<group>"; };
+		7805E8831FC4732300281CCE /* Trolley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trolley.png; path = ../Trolley.png; sourceTree = "<group>"; };
 		781E8D3A1FB9E81E00428872 /* MealPlanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealPlanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		781E8D3E1FB9E81E00428872 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		781E8D401FB9E81E00428872 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 				7827C83E1FBDBC27000D9B55 /* DataModel.m */,
 				7827C8401FBDBCFB000D9B55 /* Ingredient.h */,
 				7827C8411FBDBCFB000D9B55 /* Ingredient.m */,
+				7805E8811FC4732300281CCE /* Calendar.png */,
+				7805E8821FC4732300281CCE /* Plate.png */,
+				7805E8831FC4732300281CCE /* Trolley.png */,
 				781E8D491FB9E81E00428872 /* Assets.xcassets */,
 				781E8D4B1FB9E81E00428872 /* LaunchScreen.storyboard */,
 				781E8D4E1FB9E81E00428872 /* Info.plist */,
@@ -267,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				781E8D4D1FB9E81E00428872 /* LaunchScreen.storyboard in Resources */,
+				7805E8841FC4732300281CCE /* Calendar.png in Resources */,
 				781E8D4A1FB9E81E00428872 /* Assets.xcassets in Resources */,
 				781E8D481FB9E81E00428872 /* Main.storyboard in Resources */,
+				7805E8851FC4732300281CCE /* Plate.png in Resources */,
+				7805E8861FC4732300281CCE /* Trolley.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

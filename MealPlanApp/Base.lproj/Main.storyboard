@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-1626" y="45"/>
         </scene>
-        <!--Item-->
+        <!--Shopping List-->
         <scene sceneID="oxw-q4-j9g">
             <objects>
                 <tableViewController id="G8c-23-9NM" customClass="PlanTableViewController" sceneMemberID="viewController">
@@ -56,13 +56,15 @@
                             <outlet property="delegate" destination="G8c-23-9NM" id="tnL-1b-F4S"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="64q-le-wpT"/>
+                    <tabBarItem key="tabBarItem" title="Shopping List" image="Trolley.png" selectedImage="Trolley.png" id="64q-le-wpT">
+                        <inset key="imageInsets" minX="121" minY="120" maxX="115" maxY="115"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAp-ze-nrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="45"/>
+            <point key="canvasLocation" x="-594" y="394"/>
         </scene>
-        <!--Item-->
+        <!--Meal Plan-->
         <scene sceneID="D9I-aY-C6m">
             <objects>
                 <tableViewController id="DXo-MK-dOj" customClass="TableViewController" sceneMemberID="viewController">
@@ -94,12 +96,19 @@
                             <outlet property="delegate" destination="DXo-MK-dOj" id="26f-7N-6CQ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="MeL-E9-aL1"/>
+                    <tabBarItem key="tabBarItem" title="Meal Plan" image="Calendar.png" selectedImage="Calendar.png" id="MeL-E9-aL1">
+                        <inset key="imageInsets" minX="119" minY="122" maxX="118" maxY="117"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="yBq-fX-nJ4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4L-Fy-9dO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="-708.39580209895053"/>
+            <point key="canvasLocation" x="-594" y="-377"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendar.png" width="512" height="512"/>
+        <image name="Trolley.png" width="512" height="512"/>
+    </resources>
 </document>
