@@ -18,34 +18,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t90-4T-1AT">
-                                <frame key="frameInset" minX="165" minY="70" width="46" height="33"/>
-                                <state key="normal" title="Chilli"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rz-VP-gcS">
+                                <state key="normal" title="Chilli "/>
+                                <connections>
+                                    <action selector="ChilliButton:" destination="YQN-B0-OLc" eventType="touchUpInside" id="f7q-J5-Ypg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJu-dG-3np">
-                                <frame key="frameInset" minX="163" minY="153" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68v-XY-2FJ">
                                 <state key="normal" title="Risotto"/>
+                                <connections>
+                                    <action selector="RisottoButton:" destination="YQN-B0-OLc" eventType="touchUpInside" id="L9S-WZ-4lx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="586-HA-X9R">
+                                <frame key="frameInset" minX="163" minY="220" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stir-fry"/>
+                                <connections>
+                                    <action selector="StirFryButton:" destination="YQN-B0-OLc" eventType="touchUpInside" id="LK7-yg-pNq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FJu-dG-3np" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="PHZ-El-thq"/>
-                            <constraint firstItem="t90-4T-1AT" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="pzw-wX-Hlj"/>
-                            <constraint firstItem="FJu-dG-3np" firstAttribute="top" secondItem="t90-4T-1AT" secondAttribute="bottom" constant="50" id="rxp-NA-076"/>
-                            <constraint firstItem="t90-4T-1AT" firstAttribute="top" secondItem="2WQ-2Q-uvv" secondAttribute="bottom" constant="50" id="utw-4N-OeY"/>
+                            <constraint firstItem="4Rz-VP-gcS" firstAttribute="top" secondItem="2WQ-2Q-uvv" secondAttribute="bottom" constant="50" id="CEM-Qf-Usv"/>
+                            <constraint firstItem="68v-XY-2FJ" firstAttribute="top" secondItem="4Rz-VP-gcS" secondAttribute="bottom" constant="50" id="Sx5-bu-yNo"/>
+                            <constraint firstItem="4Rz-VP-gcS" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="d7j-VF-Fao"/>
+                            <constraint firstItem="68v-XY-2FJ" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="lWN-cy-pba"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" selectedImage="Plate.png" systemItem="bookmarks" id="gMd-qM-TVO">
                         <inset key="imageInsets" minX="120" minY="122" maxX="120" maxY="122"/>
                     </tabBarItem>
-                    <connections>
-                        <outlet property="ChilliButton" destination="t90-4T-1AT" id="xra-rr-1WA"/>
-                        <outlet property="RisottoButton" destination="FJu-dG-3np" id="XpJ-KT-3S6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pR-g9-FDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895.20000000000005" y="846.9265367316342"/>
+            <point key="canvasLocation" x="-895" y="758"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BJH-cq-dGi">
@@ -58,8 +66,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="DXo-MK-dOj" kind="relationship" relationship="viewControllers" id="cDC-Ho-2BU"/>
-                        <segue destination="G8c-23-9NM" kind="relationship" relationship="viewControllers" id="pZg-JR-rMB"/>
-                        <segue destination="YQN-B0-OLc" kind="relationship" relationship="viewControllers" id="MMN-Sb-HxE"/>
+                        <segue destination="G8c-23-9NM" kind="relationship" relationship="viewControllers" id="ZhE-GB-qwj"/>
+                        <segue destination="YQN-B0-OLc" kind="relationship" relationship="viewControllers" id="DFD-zS-zQx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Chn-GX-vCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,7 +112,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAp-ze-nrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-206" y="95"/>
+            <point key="canvasLocation" x="-895" y="45"/>
         </scene>
         <!--Plan Table View Controller-->
         <scene sceneID="D9I-aY-C6m">
@@ -139,14 +147,13 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" selectedImage="Calendar.png" systemItem="favorites" id="MeL-E9-aL1">
-                        <inset key="imageInsets" minX="119" minY="122" maxX="119" maxY="121"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <inset key="imageInsets" minX="120" minY="120" maxX="120" maxY="120"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="yBq-fX-nJ4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4L-Fy-9dO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895" y="-666"/>
+            <point key="canvasLocation" x="-895" y="-618"/>
         </scene>
     </scenes>
     <resources>

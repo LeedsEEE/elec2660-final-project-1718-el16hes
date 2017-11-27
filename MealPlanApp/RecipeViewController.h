@@ -10,8 +10,13 @@
 
 
 @interface RecipeViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *ChilliButton;
-@property (weak, nonatomic) IBOutlet UIButton *RisottoButton;
+
+
+- (IBAction)ChilliButton:(UIButton *)sender;
+- (IBAction)RisottoButton:(UIButton *)sender;
+- (IBAction)StirFryButton:(UIButton *)sender;
+
+
 
 
 @end

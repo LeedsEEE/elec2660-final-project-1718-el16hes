@@ -47,6 +47,10 @@
     
     // Configure the cell...
     
+    
+    if(indexPath.section == 0) {   //Days of the week
+        cell.textLabel.text = @"Hello, world";
+    }
     return cell;
 }
 
