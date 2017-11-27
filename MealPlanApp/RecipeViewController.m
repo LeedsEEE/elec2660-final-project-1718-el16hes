@@ -53,6 +53,24 @@
     
 }
 
+- (IBAction)SpagBolButton:(UIButton *)sender {
+    
+    NSURL *SpagBolRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1556/sosimple-spaghetti-bolognese"]; //Sets the link for the spag bol button
+    
+    [[UIApplication sharedApplication] openURL:SpagBolRecipe options:@{} completionHandler:^(BOOL success) {
+    }]; //Tells the button to open the link
+
+}
+
+- (IBAction)CurryButton:(UIButton *)sender {
+    
+    NSURL *CurryRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1993658/homestyle-chicken-curry"]; //Sets the link for the curry button
+    
+    [[UIApplication sharedApplication] openURL:CurryRecipe options:@{} completionHandler:^(BOOL success) {
+    }]; //Tells the button to open the link
+    
+}
+
 
 
     

@@ -15,6 +15,8 @@
 - (IBAction)ChilliButton:(UIButton *)sender;
 - (IBAction)RisottoButton:(UIButton *)sender;
 - (IBAction)StirFryButton:(UIButton *)sender;
+- (IBAction)SpagBolButton:(UIButton *)sender;
+- (IBAction)CurryButton:(UIButton *)sender;
 
 
 
