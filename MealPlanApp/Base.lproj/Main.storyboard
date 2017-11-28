@@ -194,9 +194,7 @@
                             <outlet property="delegate" destination="DXo-MK-dOj" id="26f-7N-6CQ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Meal Plan" image="Calendar.png" selectedImage="Calendar.png" id="MeL-E9-aL1">
-                        <inset key="imageInsets" minX="120" minY="120" maxX="120" maxY="120"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Meal Plan" image="Calendar.png" selectedImage="Calendar.png" id="MeL-E9-aL1"/>
                     <navigationItem key="navigationItem" id="yBq-fX-nJ4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4L-Fy-9dO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -205,7 +203,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Calendar.png" width="512" height="512"/>
+        <image name="Calendar.png" width="28" height="28"/>
         <image name="Plate.png" width="512" height="512"/>
         <image name="Trolley.png" width="512" height="512"/>
     </resources>
