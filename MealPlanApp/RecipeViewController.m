@@ -71,6 +71,24 @@
     
 }
 
+- (IBAction)Burgers:(UIButton *)sender {
+    NSURL *BurgerRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1514/beef-burgers-learn-to-make"]; //Sets the link for the burger button
+    
+    [[UIApplication sharedApplication] openURL:BurgerRecipe options:@{} completionHandler:^(BOOL success) {
+    }]; //Tells the button to open the link
+    
+        
+}
+
+- (IBAction)SweetSourButton:(UIButton *)sender {
+    NSURL *SweetSourRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1472/easy-sweet-and-sour-chicken"]; //Sets the link for the sweet sour button
+    
+    [[UIApplication sharedApplication] openURL:SweetSourRecipe options:@{} completionHandler:^(BOOL success) {
+    }]; //Tells the button to open the link
+    
+    
+}
+
 
 
     

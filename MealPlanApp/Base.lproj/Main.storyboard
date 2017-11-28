@@ -32,41 +32,57 @@
                                     <action selector="RisottoButton:" destination="YQN-B0-OLc" eventType="touchUpInside" id="L9S-WZ-4lx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="586-HA-X9R">
-                                <frame key="frameInset" minX="122" minY="220" width="131" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="586-HA-X9R">
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Stir-fry"/>
                                 <connections>
                                     <action selector="StirFryButton:" destination="YQN-B0-OLc" eventType="touchUpInside" id="LK7-yg-pNq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHP-uq-QOm">
-                                <frame key="frameInset" minX="76" minY="290" width="224" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHP-uq-QOm">
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Spaghetti Bolognese"/>
                                 <connections>
                                     <action selector="SpagBolButton:" destination="YQN-B0-OLc" eventType="touchUpInside" id="Pnb-n9-bBr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49q-4X-9QF">
-                                <frame key="frameInset" minX="124" minY="360" width="128" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49q-4X-9QF">
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Chicken Curry"/>
                                 <connections>
                                     <action selector="CurryButton:" destination="YQN-B0-OLc" eventType="touchUpInside" id="aOc-TB-aOi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-F0-9Zq">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Beef Burgers"/>
+                                <connections>
+                                    <action selector="Burgers:" destination="YQN-B0-OLc" eventType="touchUpInside" id="CoV-DX-nKb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWm-B9-hWM">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sweet and Sour Chicken"/>
+                                <connections>
+                                    <action selector="SweetSourButton:" destination="YQN-B0-OLc" eventType="touchUpInside" id="VbJ-iq-gMe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YHP-uq-QOm" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="5KU-mF-cfw"/>
+                            <constraint firstItem="rWm-B9-hWM" firstAttribute="top" secondItem="wQ6-F0-9Zq" secondAttribute="bottom" constant="35" id="C8j-HB-Sn7"/>
+                            <constraint firstItem="586-HA-X9R" firstAttribute="top" secondItem="68v-XY-2FJ" secondAttribute="bottom" constant="35" id="CAh-OK-Aea"/>
                             <constraint firstItem="4Rz-VP-gcS" firstAttribute="top" secondItem="2WQ-2Q-uvv" secondAttribute="bottom" constant="40" id="CEM-Qf-Usv"/>
                             <constraint firstItem="49q-4X-9QF" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="DwS-PY-DMW"/>
-                            <constraint firstItem="68v-XY-2FJ" firstAttribute="top" secondItem="4Rz-VP-gcS" secondAttribute="bottom" constant="40" id="Sx5-bu-yNo"/>
+                            <constraint firstItem="68v-XY-2FJ" firstAttribute="top" secondItem="4Rz-VP-gcS" secondAttribute="bottom" constant="35" id="Sx5-bu-yNo"/>
+                            <constraint firstItem="wQ6-F0-9Zq" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="XGp-8u-lGO"/>
                             <constraint firstItem="4Rz-VP-gcS" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="d7j-VF-Fao"/>
-                            <constraint firstItem="YHP-uq-QOm" firstAttribute="top" secondItem="586-HA-X9R" secondAttribute="bottom" constant="40" id="hfl-Ow-Vlt"/>
+                            <constraint firstItem="YHP-uq-QOm" firstAttribute="top" secondItem="586-HA-X9R" secondAttribute="bottom" constant="35" id="hfl-Ow-Vlt"/>
+                            <constraint firstItem="wQ6-F0-9Zq" firstAttribute="top" secondItem="49q-4X-9QF" secondAttribute="bottom" constant="35" id="kMI-MJ-aC4"/>
+                            <constraint firstItem="rWm-B9-hWM" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="kqk-u6-nwl"/>
                             <constraint firstItem="68v-XY-2FJ" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="lWN-cy-pba"/>
-                            <constraint firstItem="49q-4X-9QF" firstAttribute="top" secondItem="YHP-uq-QOm" secondAttribute="bottom" constant="40" id="vdZ-K6-0VT"/>
+                            <constraint firstItem="49q-4X-9QF" firstAttribute="top" secondItem="YHP-uq-QOm" secondAttribute="bottom" constant="35" id="vdZ-K6-0VT"/>
                             <constraint firstItem="586-HA-X9R" firstAttribute="centerX" secondItem="1YZ-gd-lCj" secondAttribute="centerX" id="wML-IA-aDS"/>
                         </constraints>
                     </view>
@@ -135,26 +151,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAp-ze-nrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895" y="45"/>
+            <point key="canvasLocation" x="-367" y="45"/>
         </scene>
         <!--Plan Table View Controller-->
         <scene sceneID="D9I-aY-C6m">
             <objects>
                 <tableViewController id="DXo-MK-dOj" customClass="PlanTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" sectionHeaderHeight="28" sectionFooterHeight="28" id="ljh-9y-IuU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="ljh-9y-IuU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanCell" textLabel="V3y-Me-Tik" rowHeight="35" style="IBUITableViewCellStyleDefault" id="5yx-CC-9ig">
-                                <rect key="frame" x="0.0" y="28" width="375" height="35"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanCell" textLabel="V3y-Me-Tik" rowHeight="73" style="IBUITableViewCellStyleDefault" id="5yx-CC-9ig">
+                                <rect key="frame" x="0.0" y="28" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5yx-CC-9ig" id="8cY-X6-b3C">
-                                    <frame key="frameInset" width="375" height="34"/>
+                                    <frame key="frameInset" width="375" height="72"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Meal Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V3y-Me-Tik">
-                                            <frame key="frameInset" minX="15" width="345" height="34"/>
+                                            <frame key="frameInset" minX="15" width="345" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -169,18 +185,17 @@
                             <outlet property="delegate" destination="DXo-MK-dOj" id="26f-7N-6CQ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" selectedImage="Calendar.png" systemItem="favorites" id="MeL-E9-aL1">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="MeL-E9-aL1">
                         <inset key="imageInsets" minX="120" minY="120" maxX="120" maxY="120"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="yBq-fX-nJ4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4L-Fy-9dO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895" y="-618"/>
+            <point key="canvasLocation" x="-895.20000000000005" y="-618.44077961019491"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Calendar.png" width="512" height="512"/>
         <image name="Plate.png" width="512" height="512"/>
         <image name="Trolley.png" width="512" height="512"/>
     </resources>

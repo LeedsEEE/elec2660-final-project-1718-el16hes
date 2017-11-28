@@ -17,6 +17,8 @@
 - (IBAction)StirFryButton:(UIButton *)sender;
 - (IBAction)SpagBolButton:(UIButton *)sender;
 - (IBAction)CurryButton:(UIButton *)sender;
+- (IBAction)Burgers:(UIButton *)sender;
+- (IBAction)SweetSourButton:(UIButton *)sender;
 
 
 

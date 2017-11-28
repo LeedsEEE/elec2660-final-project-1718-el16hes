@@ -43,7 +43,7 @@
     
     // Configure the cell...
     
-    if(indexPath.section == 0) {   //Days of the week
+   if(indexPath.section == 0) {   //Days of the week
         cell.textLabel.text = @"Monday";
     }
     if(indexPath.section == 1) {   //Days of the week
