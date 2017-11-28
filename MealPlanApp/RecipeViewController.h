@@ -19,6 +19,7 @@
 - (IBAction)CurryButton:(UIButton *)sender;
 - (IBAction)Burgers:(UIButton *)sender;
 - (IBAction)SweetSourButton:(UIButton *)sender;
+- (IBAction)NoodlesButton:(UIButton *)sender;
 
 
 

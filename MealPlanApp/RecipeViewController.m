@@ -89,6 +89,14 @@
     
 }
 
+- (IBAction)NoodlesButton:(UIButton *)sender {
+        NSURL *NoodlesRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1813/easy-noodles"]; //Sets the link for the noodles button
+        
+        [[UIApplication sharedApplication] openURL:NoodlesRecipe options:@{} completionHandler:^(BOOL success) {
+        }]; //Tells the button to open the link
+    
+}
+
 
 
     
