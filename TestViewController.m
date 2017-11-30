@@ -23,6 +23,8 @@
     
     self.FirstTableView.delegate = self;
     self.FirstTableView.dataSource = self;
+    self.SecondTableView.delegate = self;
+    self.SecondTableView.dataSource = self;
     
     
     self.MealData = [[NSArray alloc]initWithObjects:
@@ -43,6 +45,7 @@
     return [self.MealData count];
                                                                                         
 }
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 static NSString *simpleTableIdentifier = @"SimpleTableItem";
@@ -66,8 +69,10 @@ static NSString *simpleTableIdentifier = @"SimpleTableItem";
     
     UITableViewCell *cell = [self.FirstTableView cellForRowAtIndexPath:indexPath];
     [self.FirstButton setTitle:cell.textLabel.text forState:UIControlStateNormal];
+    [self.SecondButton setTitle:cell.textLabel.text forState:UIControlStateNormal];
     
     self.FirstTableView.hidden = YES;
+    self.SecondTableView.hidden = YES;
     
     
     
@@ -103,4 +108,15 @@ static NSString *simpleTableIdentifier = @"SimpleTableItem";
     else         self.FirstTableView.hidden = YES;
     
 }
+
+- (IBAction)SecondButtonAction:(id)sender {
+    
+    if (self.SecondTableView.hidden == YES){
+        self.SecondTableView.hidden = NO;
+    }
+    
+    else         self.SecondTableView.hidden = YES;
+}
+
+
 @end

@@ -22,7 +22,7 @@
 		7827C83F1FBDBC27000D9B55 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827C83E1FBDBC27000D9B55 /* DataModel.m */; };
 		7827C8421FBDBCFB000D9B55 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827C8411FBDBCFB000D9B55 /* Ingredient.m */; };
 		783822FD1FBC797C00A92248 /* PlanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783822FC1FBC797C00A92248 /* PlanTableViewController.m */; };
-		78E66D851FC4386200B7DCB6 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E66D841FC4386200B7DCB6 /* ListTableViewController.m */; };
+		784AEF1C1FD02B3500075EEF /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784AEF1B1FD02B3500075EEF /* ListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,8 @@
 		7827C8411FBDBCFB000D9B55 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
 		783822FB1FBC797C00A92248 /* PlanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanTableViewController.h; path = ../PlanTableViewController.h; sourceTree = "<group>"; };
 		783822FC1FBC797C00A92248 /* PlanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanTableViewController.m; path = ../PlanTableViewController.m; sourceTree = "<group>"; };
-		78E66D831FC4386200B7DCB6 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListTableViewController.h; path = ../ListTableViewController.h; sourceTree = "<group>"; };
-		78E66D841FC4386200B7DCB6 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListTableViewController.m; path = ../ListTableViewController.m; sourceTree = "<group>"; };
+		784AEF1A1FD02B3500075EEF /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = ../ListViewController.h; sourceTree = "<group>"; };
+		784AEF1B1FD02B3500075EEF /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = ../ListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +124,8 @@
 			children = (
 				783822FB1FBC797C00A92248 /* PlanTableViewController.h */,
 				783822FC1FBC797C00A92248 /* PlanTableViewController.m */,
-				78E66D831FC4386200B7DCB6 /* ListTableViewController.h */,
-				78E66D841FC4386200B7DCB6 /* ListTableViewController.m */,
+				784AEF1A1FD02B3500075EEF /* ListViewController.h */,
+				784AEF1B1FD02B3500075EEF /* ListViewController.m */,
 				7805E8C91FC47ABA00281CCE /* RecipeViewController.h */,
 				7805E8CA1FC47ABA00281CCE /* RecipeViewController.m */,
 				781E8D401FB9E81E00428872 /* AppDelegate.h */,
@@ -312,7 +312,7 @@
 			files = (
 				7827C83F1FBDBC27000D9B55 /* DataModel.m in Sources */,
 				781E8D421FB9E81E00428872 /* AppDelegate.m in Sources */,
-				78E66D851FC4386200B7DCB6 /* ListTableViewController.m in Sources */,
+				784AEF1C1FD02B3500075EEF /* ListViewController.m in Sources */,
 				781E8D3F1FB9E81E00428872 /* main.m in Sources */,
 				7827C8421FBDBCFB000D9B55 /* Ingredient.m in Sources */,
 				7805E8CB1FC47ABB00281CCE /* RecipeViewController.m in Sources */,

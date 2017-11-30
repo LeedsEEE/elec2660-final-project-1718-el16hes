@@ -15,10 +15,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *TuesdayLabel;
 @property (weak, nonatomic) IBOutlet UIButton *FirstButton;
 @property (weak, nonatomic) IBOutlet UITableView *FirstTableView;
+@property (weak, nonatomic) IBOutlet UIButton *SecondButton;
+@property (weak, nonatomic) IBOutlet UITableView *SecondTableView;
 
 
 @property(strong,nonatomic) NSArray *MealData;
 - (IBAction)FirstButtonAction:(id)sender;
+- (IBAction)SecondButtonAction:(id)sender;
 
 
 

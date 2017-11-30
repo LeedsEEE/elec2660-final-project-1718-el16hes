@@ -41,22 +41,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npk-RQ-ZJo">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Please Select">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SecondButtonAction:" destination="wgi-hx-Czg" eventType="touchUpInside" id="cGS-Sq-tmu"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pzc-D8-ndB">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="width" secondItem="Npk-RQ-ZJo" secondAttribute="width" id="CtZ-V5-peX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pzc-D8-ndB" secondAttribute="trailing" constant="7" id="D6X-CX-Xf5"/>
+                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="top" secondItem="Npk-RQ-ZJo" secondAttribute="bottom" id="JaE-qe-3UT"/>
                             <constraint firstItem="uRc-r5-SCq" firstAttribute="centerY" secondItem="IN1-2E-MMR" secondAttribute="centerY" id="K8R-LH-9xl"/>
                             <constraint firstItem="uRc-r5-SCq" firstAttribute="leading" secondItem="IN1-2E-MMR" secondAttribute="trailing" constant="52.5" id="My9-Xb-caB"/>
+                            <constraint firstItem="CdE-UV-Ugd" firstAttribute="centerX" secondItem="IN1-2E-MMR" secondAttribute="centerX" id="RN8-ys-NnD"/>
                             <constraint firstItem="Mnu-4e-vFx" firstAttribute="top" secondItem="uRc-r5-SCq" secondAttribute="bottom" id="SF2-yk-E8M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mnu-4e-vFx" secondAttribute="trailing" constant="7" id="X09-1O-wYt"/>
-                            <constraint firstItem="ycn-Eg-xQV" firstAttribute="top" secondItem="IN1-2E-MMR" secondAttribute="bottom" constant="515" id="dLf-Tm-OqT"/>
+                            <constraint firstItem="ycn-Eg-xQV" firstAttribute="top" secondItem="IN1-2E-MMR" secondAttribute="bottom" constant="525" id="dLf-Tm-OqT"/>
                             <constraint firstItem="IN1-2E-MMR" firstAttribute="height" secondItem="uRc-r5-SCq" secondAttribute="height" id="dYV-KV-GD5"/>
-                            <constraint firstItem="IN1-2E-MMR" firstAttribute="top" secondItem="2t1-Cy-pIa" secondAttribute="bottom" constant="57" id="ejL-Nr-A5x"/>
+                            <constraint firstItem="Npk-RQ-ZJo" firstAttribute="height" secondItem="CdE-UV-Ugd" secondAttribute="height" id="eUU-pL-gDK"/>
+                            <constraint firstItem="IN1-2E-MMR" firstAttribute="top" secondItem="2t1-Cy-pIa" secondAttribute="bottom" constant="48" id="ejL-Nr-A5x"/>
+                            <constraint firstItem="ycn-Eg-xQV" firstAttribute="top" secondItem="Npk-RQ-ZJo" secondAttribute="bottom" constant="358" id="fsi-L4-cSf"/>
                             <constraint firstItem="uRc-r5-SCq" firstAttribute="width" secondItem="Mnu-4e-vFx" secondAttribute="width" id="jMk-mS-5jn"/>
                             <constraint firstItem="ycn-Eg-xQV" firstAttribute="top" secondItem="Mnu-4e-vFx" secondAttribute="bottom" constant="413" id="k03-g2-ZLc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Npk-RQ-ZJo" secondAttribute="trailing" constant="7" id="kj4-nf-OU3"/>
+                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="height" secondItem="Mnu-4e-vFx" secondAttribute="height" id="lTn-jC-ydM"/>
+                            <constraint firstItem="CdE-UV-Ugd" firstAttribute="top" secondItem="IN1-2E-MMR" secondAttribute="bottom" constant="140" id="pPT-lE-Gz6"/>
                             <constraint firstItem="IN1-2E-MMR" firstAttribute="leading" secondItem="Mub-pw-OsA" secondAttribute="leadingMargin" constant="8" id="pnA-qb-DDn"/>
+                            <constraint firstItem="Npk-RQ-ZJo" firstAttribute="width" secondItem="uRc-r5-SCq" secondAttribute="width" id="sXl-Oa-eL8"/>
                             <constraint firstItem="Mnu-4e-vFx" firstAttribute="leading" secondItem="Mub-pw-OsA" secondAttribute="leadingMargin" constant="133" id="tfU-Ys-84q"/>
-                            <constraint firstItem="CdE-UV-Ugd" firstAttribute="top" secondItem="IN1-2E-MMR" secondAttribute="bottom" constant="140" id="vp4-WJ-iGe"/>
-                            <constraint firstItem="CdE-UV-Ugd" firstAttribute="leading" secondItem="Mub-pw-OsA" secondAttribute="leadingMargin" constant="8" id="zrt-zo-d9x"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Meal Plan" image="Calendar.png" id="U0d-dU-X8M"/>
@@ -64,6 +84,8 @@
                         <outlet property="FirstButton" destination="uRc-r5-SCq" id="haQ-HJ-A6G"/>
                         <outlet property="FirstTableView" destination="Mnu-4e-vFx" id="DeU-MT-hSJ"/>
                         <outlet property="MondayLabel" destination="IN1-2E-MMR" id="dfJ-OZ-c7Y"/>
+                        <outlet property="SecondButton" destination="Npk-RQ-ZJo" id="L1H-XQ-1fU"/>
+                        <outlet property="SecondTableView" destination="Pzc-D8-ndB" id="i1D-JC-PmX"/>
                         <outlet property="TuesdayLabel" destination="CdE-UV-Ugd" id="YyZ-E6-TS2"/>
                     </connections>
                 </viewController>
@@ -177,51 +199,93 @@
                     </tabBar>
                     <connections>
                         <segue destination="wgi-hx-Czg" kind="relationship" relationship="viewControllers" id="5Q9-4g-UHz"/>
-                        <segue destination="G8c-23-9NM" kind="relationship" relationship="viewControllers" id="dBO-FV-ZHi"/>
-                        <segue destination="YQN-B0-OLc" kind="relationship" relationship="viewControllers" id="ANR-LA-loH"/>
+                        <segue destination="bLq-5Z-caW" kind="relationship" relationship="viewControllers" id="rjF-di-KaH"/>
+                        <segue destination="YQN-B0-OLc" kind="relationship" relationship="viewControllers" id="ubI-y2-yU2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Chn-GX-vCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1626" y="45"/>
         </scene>
-        <!--Shopping List-->
-        <scene sceneID="oxw-q4-j9g">
+        <!--Shopping-->
+        <scene sceneID="UR9-5D-nIH">
             <objects>
-                <tableViewController id="G8c-23-9NM" customClass="ListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="103" sectionHeaderHeight="28" sectionFooterHeight="28" id="I6T-TO-OZk">
+                <viewController id="bLq-5Z-caW" customClass="ListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IRd-ZC-xAF"/>
+                        <viewControllerLayoutGuide type="bottom" id="nGf-0f-J5I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ac7-oi-dCg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjJ-Ir-jW0">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping Budget = £" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He6-lg-0yx">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAZ-gC-uaC">
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="AddChilliButton:" destination="bLq-5Z-caW" eventType="touchUpInside" id="YJS-Vi-940"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chilli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJr-FG-HiG">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ir-j2-Bgw">
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="MinusChilliButton:" destination="bLq-5Z-caW" eventType="touchUpInside" id="HNV-Rh-OU9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v5-Nx-zYu">
+                                <string key="text">Beef mince- £3.50,
+Onions- £0.30,
+Carrots- £0.40
+Pepper- £0.50
+Chopped tomatoes- £0.30</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" textLabel="AET-7h-6Zu" rowHeight="103" style="IBUITableViewCellStyleDefault" id="U72-ra-9go">
-                                <rect key="frame" x="0.0" y="28" width="375" height="103"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U72-ra-9go" id="Yke-ma-XY8">
-                                    <frame key="frameInset" width="375" height="102.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AET-7h-6Zu">
-                                            <frame key="frameInset" minX="15" width="345" height="102.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="G8c-23-9NM" id="q5z-wl-YkI"/>
-                            <outlet property="delegate" destination="G8c-23-9NM" id="tnL-1b-F4S"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Shopping List" image="Trolley.png" selectedImage="Trolley.png" id="64q-le-wpT"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AAp-ze-nrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1v5-Nx-zYu" secondAttribute="trailing" constant="-9" id="0mR-I2-7Cg"/>
+                            <constraint firstItem="He6-lg-0yx" firstAttribute="leading" secondItem="Ac7-oi-dCg" secondAttribute="leadingMargin" constant="83" id="93Y-yd-vJ7"/>
+                            <constraint firstItem="nGf-0f-J5I" firstAttribute="top" secondItem="GJr-FG-HiG" secondAttribute="bottom" constant="475" id="Bwe-hB-WtI"/>
+                            <constraint firstItem="1v5-Nx-zYu" firstAttribute="top" secondItem="IRd-ZC-xAF" secondAttribute="bottom" constant="42" id="SLF-Rf-2WT"/>
+                            <constraint firstItem="1v5-Nx-zYu" firstAttribute="centerY" secondItem="GJr-FG-HiG" secondAttribute="centerY" id="YBO-Ex-FUn"/>
+                            <constraint firstItem="GJr-FG-HiG" firstAttribute="top" secondItem="IRd-ZC-xAF" secondAttribute="bottom" constant="102" id="dCN-hE-pqo"/>
+                            <constraint firstItem="GJr-FG-HiG" firstAttribute="leading" secondItem="IAZ-gC-uaC" secondAttribute="trailing" constant="17" id="dJ0-Re-bgg"/>
+                            <constraint firstItem="JjJ-Ir-jW0" firstAttribute="leading" secondItem="He6-lg-0yx" secondAttribute="trailing" constant="1" id="dfx-JQ-RRs"/>
+                            <constraint firstItem="IAZ-gC-uaC" firstAttribute="leading" secondItem="9ir-j2-Bgw" secondAttribute="trailing" constant="-1" id="hue-Dp-OCc"/>
+                            <constraint firstItem="GJr-FG-HiG" firstAttribute="centerY" secondItem="IAZ-gC-uaC" secondAttribute="centerY" id="iul-DG-csu"/>
+                            <constraint firstItem="9ir-j2-Bgw" firstAttribute="centerY" secondItem="IAZ-gC-uaC" secondAttribute="centerY" id="j7J-eg-oYZ"/>
+                            <constraint firstItem="1v5-Nx-zYu" firstAttribute="leading" secondItem="GJr-FG-HiG" secondAttribute="trailing" constant="45.5" id="kcS-Mv-1IO"/>
+                            <constraint firstItem="JjJ-Ir-jW0" firstAttribute="top" secondItem="IRd-ZC-xAF" secondAttribute="bottom" constant="33" id="lgF-IR-msd"/>
+                            <constraint firstItem="nGf-0f-J5I" firstAttribute="top" secondItem="1v5-Nx-zYu" secondAttribute="bottom" constant="415" id="nGF-aV-ONJ"/>
+                            <constraint firstItem="He6-lg-0yx" firstAttribute="top" secondItem="IRd-ZC-xAF" secondAttribute="bottom" constant="33" id="wom-yu-KbL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shopping" image="Trolley.png" selectedImage="Trolley.png" id="dIz-rK-JBU"/>
+                    <connections>
+                        <outlet property="BudgetLabel" destination="JjJ-Ir-jW0" id="P8r-2X-k3D"/>
+                        <outlet property="ChilliIngredientsLabel" destination="1v5-Nx-zYu" id="IQX-t0-qdJ"/>
+                        <outlet property="ShoppingBudgestLabel" destination="He6-lg-0yx" id="ne0-hR-Y9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJF-8U-gj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="45"/>
+            <point key="canvasLocation" x="-682.39999999999998" y="46.326836581709152"/>
         </scene>
     </scenes>
     <resources>
