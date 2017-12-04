@@ -11,7 +11,7 @@
 
 @interface RecipeViewController : UIViewController
 
-
+//Connects the buttons for the RecipeViewController
 - (IBAction)ChilliButton:(UIButton *)sender;
 - (IBAction)RisottoButton:(UIButton *)sender;
 - (IBAction)StirFryButton:(UIButton *)sender;
@@ -20,6 +20,10 @@
 - (IBAction)Burgers:(UIButton *)sender;
 - (IBAction)SweetSourButton:(UIButton *)sender;
 - (IBAction)NoodlesButton:(UIButton *)sender;
+
+//Connects the labels for the RecipeViewController
+@property (weak, nonatomic) IBOutlet UILabel *RecipeTitle;
+@property (weak, nonatomic) IBOutlet UITextView *ReferenceLabel;
 
 
 

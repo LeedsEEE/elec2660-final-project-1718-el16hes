@@ -10,6 +10,8 @@
 
 @interface ListViewController : UIViewController
 
+
+//Connects the labels for the ListViewController
 @property (weak, nonatomic) IBOutlet UILabel *ShoppingBudgestLabel;
 @property (weak, nonatomic) IBOutlet UILabel *BudgetLabel;
 @property (weak, nonatomic) IBOutlet UILabel *RisottoLabel;
@@ -21,7 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *NoodlesLabel;
 
 
-//Buttons
+//Connects the buttons for the ListViewController
 - (IBAction)AddChilliButton:(UIButton *)sender;
 - (IBAction)MinusChilliButton:(UIButton *)sender;
 - (IBAction)AddRisottoButton:(UIButton *)sender;
@@ -38,9 +40,6 @@
 - (IBAction)MinusSweetSourButton:(UIButton *)sender;
 - (IBAction)AddNoodlesButton:(UIButton *)sender;
 - (IBAction)MinusNoodlesButton:(UIButton *)sender;
-
-
-
 
 
 @end
