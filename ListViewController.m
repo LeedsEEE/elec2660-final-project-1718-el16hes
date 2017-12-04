@@ -19,6 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -31,13 +34,13 @@
 
 - (IBAction)AddChilliButton:(UIButton *)sender {
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+3.95];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+3.45];
 
 }
 
 - (IBAction)MinusChilliButton:(UIButton *)sender {
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-3.95];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-3.45];
 
     
 }

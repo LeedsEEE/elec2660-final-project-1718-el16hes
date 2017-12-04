@@ -36,6 +36,7 @@
 - (IBAction)MinusCurryButton:(UIButton *)sender;
 
 
+@property (weak, nonatomic) IBOutlet UIScrollView *BudgetScrollView;
 
 
 
