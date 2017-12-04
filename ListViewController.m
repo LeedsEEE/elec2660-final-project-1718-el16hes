@@ -93,6 +93,42 @@
     
 }
 
+- (IBAction)AddBurgerButton:(UIButton *)sender {
+    
+         _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+5.40];
+    
+}
+
+- (IBAction)MinusBurgerButton:(UIButton *)sender {
+    
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-5.40];
+    
+}
+
+- (IBAction)AddSweetSourButton:(UIButton *)sender {
+    
+       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+4.55];
+    
+}
+
+- (IBAction)MinusSweetSourButton:(UIButton *)sender {
+    
+        _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-4.55];
+    
+}
+
+- (IBAction)AddNoodlesButton:(UIButton *)sender {
+    
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+3.50];
+    
+}
+
+- (IBAction)MinusNoodlesButton:(UIButton *)sender {
+    
+       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-3.50];
+    
+}
+
 
 
 
