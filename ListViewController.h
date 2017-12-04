@@ -20,9 +20,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *SpagBolLabel;
 @property (weak, nonatomic) IBOutlet UITextView *SpagBolIngredientsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *CurryLabel;
+@property (weak, nonatomic) IBOutlet UILabel *BurgerLabel;
 
 
-
+//Buttons
 - (IBAction)AddChilliButton:(UIButton *)sender;
 - (IBAction)MinusChilliButton:(UIButton *)sender;
 - (IBAction)AddRisottoButton:(UIButton *)sender;

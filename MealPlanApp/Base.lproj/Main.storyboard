@@ -371,6 +371,11 @@ Curry Sauce- £1.00</string>
                                     <action selector="MinusCurryButton:" destination="bLq-5Z-caW" eventType="touchUpInside" id="bj4-61-lgn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burgers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qj-Fx-xHI">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -403,9 +408,11 @@ Curry Sauce- £1.00</string>
                             <constraint firstItem="B0H-i6-9hN" firstAttribute="leading" secondItem="Ac7-oi-dCg" secondAttribute="leadingMargin" constant="168" id="bDg-2N-Ybp"/>
                             <constraint firstItem="GJr-FG-HiG" firstAttribute="top" secondItem="IRd-ZC-xAF" secondAttribute="bottom" constant="102" id="dCN-hE-pqo"/>
                             <constraint firstItem="GJr-FG-HiG" firstAttribute="leading" secondItem="IAZ-gC-uaC" secondAttribute="trailing" constant="17" id="dJ0-Re-bgg"/>
+                            <constraint firstItem="2qj-Fx-xHI" firstAttribute="top" secondItem="teT-Dl-sa3" secondAttribute="bottom" constant="70" id="dS1-bL-yz6"/>
                             <constraint firstItem="JjJ-Ir-jW0" firstAttribute="leading" secondItem="He6-lg-0yx" secondAttribute="trailing" constant="1" id="dfx-JQ-RRs"/>
                             <constraint firstItem="E76-19-3FU" firstAttribute="top" secondItem="c2E-BJ-H7I" secondAttribute="bottom" constant="70" id="f60-K7-050"/>
                             <constraint firstItem="FJG-A6-ST7" firstAttribute="top" secondItem="GJr-FG-HiG" secondAttribute="bottom" constant="70" id="fWH-e2-TaT"/>
+                            <constraint firstItem="2qj-Fx-xHI" firstAttribute="leading" secondItem="Ac7-oi-dCg" secondAttribute="leadingMargin" constant="76" id="fju-jk-URA"/>
                             <constraint firstItem="OP1-cL-ybm" firstAttribute="leading" secondItem="Ac7-oi-dCg" secondAttribute="leadingMargin" constant="168" id="g4x-71-Xgj"/>
                             <constraint firstItem="teT-Dl-sa3" firstAttribute="centerY" secondItem="x2c-UB-Vei" secondAttribute="centerY" id="gmn-VV-FQA"/>
                             <constraint firstItem="1v5-Nx-zYu" firstAttribute="leading" secondItem="Ac7-oi-dCg" secondAttribute="leadingMargin" constant="175" id="gtt-kT-ble"/>
@@ -432,6 +439,7 @@ Curry Sauce- £1.00</string>
                     <tabBarItem key="tabBarItem" title="Shopping" image="Trolley.png" selectedImage="Trolley.png" id="dIz-rK-JBU"/>
                     <connections>
                         <outlet property="BudgetLabel" destination="JjJ-Ir-jW0" id="P8r-2X-k3D"/>
+                        <outlet property="BurgerLabel" destination="2qj-Fx-xHI" id="Ico-Pf-3be"/>
                         <outlet property="ChilliIngredientsLabel" destination="1v5-Nx-zYu" id="IQX-t0-qdJ"/>
                         <outlet property="CurryLabel" destination="teT-Dl-sa3" id="ti2-PU-UAT"/>
                         <outlet property="RisottoIngredientsLabel" destination="cO5-Aj-ZfD" id="VWu-GY-0An"/>
