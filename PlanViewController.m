@@ -64,7 +64,7 @@ static NSString *simpleTableIdentifier = @"SimpleTableItem";
     cell2.textLabel.text= [self.MealData objectAtIndex:indexPath.row];
 
     return cell;
-    return cell2;
+  
 }
 
 
