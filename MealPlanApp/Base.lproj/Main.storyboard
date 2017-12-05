@@ -33,8 +33,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pzc-D8-ndB">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRc-r5-SCq">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Please Select"/>
+                                <connections>
+                                    <action selector="FirstButtonAction:" destination="wgi-hx-Czg" eventType="touchUpInside" id="xwr-GL-wdM"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npk-RQ-ZJo">
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Please Select">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,41 +55,29 @@
                                     <action selector="SecondButtonAction:" destination="wgi-hx-Czg" eventType="touchUpInside" id="cGS-Sq-tmu"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pzc-D8-ndB">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRc-r5-SCq">
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Please Select"/>
-                                <connections>
-                                    <action selector="FirstButtonAction:" destination="wgi-hx-Czg" eventType="touchUpInside" id="xwr-GL-wdM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.84813341900000006" green="1" blue="0.80565326420000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="uRc-r5-SCq" firstAttribute="leading" secondItem="IN1-2E-MMR" secondAttribute="trailing" constant="34.5" id="6VD-QT-xpi"/>
-                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="width" secondItem="Npk-RQ-ZJo" secondAttribute="width" id="CtZ-V5-peX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Pzc-D8-ndB" secondAttribute="trailing" constant="7" id="D6X-CX-Xf5"/>
-                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="top" secondItem="Npk-RQ-ZJo" secondAttribute="bottom" id="JaE-qe-3UT"/>
-                            <constraint firstItem="uRc-r5-SCq" firstAttribute="centerY" secondItem="IN1-2E-MMR" secondAttribute="centerY" id="K8R-LH-9xl"/>
-                            <constraint firstItem="CdE-UV-Ugd" firstAttribute="centerX" secondItem="IN1-2E-MMR" secondAttribute="centerX" id="RN8-ys-NnD"/>
-                            <constraint firstItem="Mnu-4e-vFx" firstAttribute="top" secondItem="uRc-r5-SCq" secondAttribute="bottom" id="SF2-yk-E8M"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mnu-4e-vFx" secondAttribute="trailing" constant="7" id="X09-1O-wYt"/>
+                            <constraint firstItem="uRc-r5-SCq" firstAttribute="height" secondItem="Npk-RQ-ZJo" secondAttribute="height" id="3JH-pI-NxW"/>
+                            <constraint firstItem="CdE-UV-Ugd" firstAttribute="leading" secondItem="Mub-pw-OsA" secondAttribute="leadingMargin" constant="8" id="BuW-UK-8ur"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Npk-RQ-ZJo" secondAttribute="trailing" constant="7" id="EYI-41-jyi"/>
+                            <constraint firstItem="Mnu-4e-vFx" firstAttribute="width" secondItem="uRc-r5-SCq" secondAttribute="width" id="H0M-1B-mrm"/>
+                            <constraint firstItem="uRc-r5-SCq" firstAttribute="centerY" secondItem="IN1-2E-MMR" secondAttribute="centerY" id="Hjc-4C-TCD"/>
+                            <constraint firstItem="uRc-r5-SCq" firstAttribute="width" secondItem="Npk-RQ-ZJo" secondAttribute="width" id="PyY-iq-AcD"/>
+                            <constraint firstItem="uRc-r5-SCq" firstAttribute="leading" secondItem="Npk-RQ-ZJo" secondAttribute="leading" id="T81-r4-Bzo"/>
+                            <constraint firstItem="Npk-RQ-ZJo" firstAttribute="centerY" secondItem="CdE-UV-Ugd" secondAttribute="centerY" id="UNc-v2-vM2"/>
+                            <constraint firstItem="Mnu-4e-vFx" firstAttribute="height" secondItem="Pzc-D8-ndB" secondAttribute="height" id="Wg0-4y-Zau"/>
+                            <constraint firstItem="Mnu-4e-vFx" firstAttribute="top" secondItem="uRc-r5-SCq" secondAttribute="bottom" id="YL6-fZ-rV4"/>
+                            <constraint firstItem="Npk-RQ-ZJo" firstAttribute="leading" secondItem="CdE-UV-Ugd" secondAttribute="trailing" constant="31" id="cH8-JN-7F8"/>
                             <constraint firstItem="ycn-Eg-xQV" firstAttribute="top" secondItem="IN1-2E-MMR" secondAttribute="bottom" constant="525" id="dLf-Tm-OqT"/>
-                            <constraint firstItem="IN1-2E-MMR" firstAttribute="height" secondItem="uRc-r5-SCq" secondAttribute="height" id="dYV-KV-GD5"/>
-                            <constraint firstItem="Npk-RQ-ZJo" firstAttribute="height" secondItem="CdE-UV-Ugd" secondAttribute="height" id="eUU-pL-gDK"/>
+                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="top" secondItem="Npk-RQ-ZJo" secondAttribute="bottom" id="e2Y-ve-kZo"/>
                             <constraint firstItem="IN1-2E-MMR" firstAttribute="top" secondItem="2t1-Cy-pIa" secondAttribute="bottom" constant="48" id="ejL-Nr-A5x"/>
-                            <constraint firstItem="ycn-Eg-xQV" firstAttribute="top" secondItem="Npk-RQ-ZJo" secondAttribute="bottom" constant="358" id="fsi-L4-cSf"/>
-                            <constraint firstItem="uRc-r5-SCq" firstAttribute="width" secondItem="Mnu-4e-vFx" secondAttribute="width" id="jMk-mS-5jn"/>
-                            <constraint firstItem="ycn-Eg-xQV" firstAttribute="top" secondItem="Mnu-4e-vFx" secondAttribute="bottom" constant="413" id="k03-g2-ZLc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Npk-RQ-ZJo" secondAttribute="trailing" constant="7" id="kj4-nf-OU3"/>
-                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="height" secondItem="Mnu-4e-vFx" secondAttribute="height" id="lTn-jC-ydM"/>
+                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="leading" secondItem="Npk-RQ-ZJo" secondAttribute="leading" id="ex9-MH-2xQ"/>
                             <constraint firstItem="CdE-UV-Ugd" firstAttribute="top" secondItem="IN1-2E-MMR" secondAttribute="bottom" constant="140" id="pPT-lE-Gz6"/>
                             <constraint firstItem="IN1-2E-MMR" firstAttribute="leading" secondItem="Mub-pw-OsA" secondAttribute="leadingMargin" constant="8" id="pnA-qb-DDn"/>
-                            <constraint firstItem="Npk-RQ-ZJo" firstAttribute="width" secondItem="uRc-r5-SCq" secondAttribute="width" id="sXl-Oa-eL8"/>
-                            <constraint firstItem="Mnu-4e-vFx" firstAttribute="leading" secondItem="Mub-pw-OsA" secondAttribute="leadingMargin" constant="133" id="tfU-Ys-84q"/>
+                            <constraint firstItem="Mnu-4e-vFx" firstAttribute="leading" secondItem="uRc-r5-SCq" secondAttribute="leading" id="rjj-Ft-Y6Z"/>
+                            <constraint firstItem="Pzc-D8-ndB" firstAttribute="width" secondItem="Npk-RQ-ZJo" secondAttribute="width" id="vB9-UA-lAm"/>
+                            <constraint firstItem="ycn-Eg-xQV" firstAttribute="top" secondItem="Pzc-D8-ndB" secondAttribute="bottom" constant="246" id="ygW-Lh-GTM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Meal Plan" image="Calendar.png" id="U0d-dU-X8M"/>
@@ -91,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahP-wL-0K9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="-1144"/>
+            <point key="canvasLocation" x="-682.39999999999998" y="-1144.6776611694154"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="sEo-8C-oJt">
