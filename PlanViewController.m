@@ -79,8 +79,8 @@ static NSString *simpleTableIdentifier = @"SimpleTableItem";
     
     [self.SecondButton setTitle:cell2.textLabel.text forState:UIControlStateNormal];
     
-   // self.FirstTableView.hidden = YES;
-   // self.SecondTableView.hidden = YES;
+    self.FirstTableView.hidden = YES;
+    self.SecondTableView.hidden = YES;
     
     
     
@@ -94,7 +94,7 @@ static NSString *simpleTableIdentifier = @"SimpleTableItem";
          self.FirstTableView.hidden = NO;
     }
     
-    else         self.FirstTableView.hidden = NO;
+    else         self.FirstTableView.hidden = YES;
     
 }
 
@@ -104,7 +104,7 @@ static NSString *simpleTableIdentifier = @"SimpleTableItem";
         self.SecondTableView.hidden = NO;
     }
     
-    else         self.SecondTableView.hidden = NO;
+    else         self.SecondTableView.hidden = YES;
 }
 
 

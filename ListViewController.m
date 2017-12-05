@@ -35,14 +35,14 @@
 // When pressed adds the value to the budget label
 - (IBAction)AddChilliButton:(UIButton *)sender {
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+3.45];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.45];
 
 }
 
 //When pressed minuses the value to the budget label
 - (IBAction)MinusChilliButton:(UIButton *)sender {
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-3.45];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.45];
 
     
 }
@@ -50,98 +50,98 @@
 // When pressed adds the value to the budget label
 - (IBAction)AddRisottoButton:(UIButton *)sender {
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+6.00];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+5.00];
     
 }
 
 //When pressed minuses the value to the budget label
 - (IBAction)MinusRisottoButton:(UIButton *)sender {
     
-      _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-6.00];
+      _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-5.00];
     
 }
 
 // When pressed adds the value to the budget label
 - (IBAction)AddStirFryButton:(UIButton *)sender {
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+5.95];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+4.95];
     
 }
 
 //When pressed minuses the value to the budget label
 - (IBAction)MinusStirFryButton:(UIButton *)sender {
     
-      _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-5.95];
+      _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-4.95];
     
 }
 
 // When pressed adds the value to the budget label
 - (IBAction)AddSpagBolButton:(UIButton *)sender {
     
-     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+3.70];
+     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.70];
     
 }
 
 //When pressed minuses the value to the budget label
 - (IBAction)MinusSpagBolButton:(UIButton *)sender {
     
-       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-3.70];
+       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.70];
     
 }
 
 // When pressed adds the value to the budget label
 - (IBAction)AddCurryButton:(UIButton *)sender {
     
-     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+4.55];
+     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+4.55];
     
 }
 
 //When pressed minuses the value to the budget label
 - (IBAction)MinusCurryButton:(UIButton *)sender {
     
-     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-4.55];
+     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-4.55];
     
 }
 
 // When pressed adds the value to the budget label
 - (IBAction)AddBurgerButton:(UIButton *)sender {
     
-         _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+5.40];
+         _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+5.40];
     
 }
 
 //When pressed minuses the value to the budget label
 - (IBAction)MinusBurgerButton:(UIButton *)sender {
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-5.40];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-5.40];
     
 }
 
 // When pressed adds the value to the budget label
 - (IBAction)AddSweetSourButton:(UIButton *)sender {
     
-       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+4.55];
+       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+4.55];
     
 }
 
 //When pressed minuses the value to the budget label
 - (IBAction)MinusSweetSourButton:(UIButton *)sender {
     
-        _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-4.55];
+        _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-4.55];
     
 }
 
 // When pressed adds the value to the budget label
 - (IBAction)AddNoodlesButton:(UIButton *)sender {
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]+3.50];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.50];
     
 }
 
 //When pressed minuses the value to the budget label
 - (IBAction)MinusNoodlesButton:(UIButton *)sender {
     
-       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text intValue]-3.50];
+       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.50];
     
 }
 
