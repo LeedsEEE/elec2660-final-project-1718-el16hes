@@ -10,6 +10,8 @@
 
 @interface MealPlanViewController : UIViewController
 
+
+@property (weak, nonatomic) IBOutlet UILabel *MealPlanLabel;
 @property (weak, nonatomic) IBOutlet UILabel *MondayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *TuesdayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *WednesdayLabel;
@@ -28,8 +30,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *FridayText;
 @property (weak, nonatomic) IBOutlet UITextField *SaturdayText;
 @property (weak, nonatomic) IBOutlet UITextField *SundayText;
-
-
 
 
 
