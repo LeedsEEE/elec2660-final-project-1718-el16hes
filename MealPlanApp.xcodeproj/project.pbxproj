@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7805E8CB1FC47ABB00281CCE /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7805E8CA1FC47ABA00281CCE /* RecipeViewController.m */; };
+		780642051FD7111F00E0BA33 /* MealPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780642041FD7111F00E0BA33 /* MealPlanViewController.m */; };
 		781888FD1FCDC7F1001B448E /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 781888FC1FCDC7F1001B448E /* Calendar.png */; };
 		781888FF1FCDC903001B448E /* Trolley.png in Resources */ = {isa = PBXBuildFile; fileRef = 781888FE1FCDC903001B448E /* Trolley.png */; };
 		781889011FCDC909001B448E /* Plate.png in Resources */ = {isa = PBXBuildFile; fileRef = 781889001FCDC909001B448E /* Plate.png */; };
-		781889071FCDCC85001B448E /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781889061FCDCC85001B448E /* PlanViewController.m */; };
 		781E8D3F1FB9E81E00428872 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 781E8D3E1FB9E81E00428872 /* main.m */; };
 		781E8D421FB9E81E00428872 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 781E8D411FB9E81E00428872 /* AppDelegate.m */; };
 		781E8D481FB9E81E00428872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781E8D461FB9E81E00428872 /* Main.storyboard */; };
@@ -44,11 +44,11 @@
 /* Begin PBXFileReference section */
 		7805E8C91FC47ABA00281CCE /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		7805E8CA1FC47ABA00281CCE /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		780642031FD7111F00E0BA33 /* MealPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealPlanViewController.h; sourceTree = "<group>"; };
+		780642041FD7111F00E0BA33 /* MealPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealPlanViewController.m; sourceTree = "<group>"; };
 		781888FC1FCDC7F1001B448E /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
 		781888FE1FCDC903001B448E /* Trolley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trolley.png; sourceTree = "<group>"; };
 		781889001FCDC909001B448E /* Plate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plate.png; sourceTree = "<group>"; };
-		781889051FCDCC85001B448E /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanViewController.h; path = ../PlanViewController.h; sourceTree = "<group>"; };
-		781889061FCDCC85001B448E /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanViewController.m; path = ../PlanViewController.m; sourceTree = "<group>"; };
 		781E8D3A1FB9E81E00428872 /* MealPlanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealPlanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		781E8D3E1FB9E81E00428872 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		781E8D401FB9E81E00428872 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 		781E8D3C1FB9E81E00428872 /* MealPlanApp */ = {
 			isa = PBXGroup;
 			children = (
-				781889051FCDCC85001B448E /* PlanViewController.h */,
-				781889061FCDCC85001B448E /* PlanViewController.m */,
+				780642031FD7111F00E0BA33 /* MealPlanViewController.h */,
+				780642041FD7111F00E0BA33 /* MealPlanViewController.m */,
 				784AEF1A1FD02B3500075EEF /* ListViewController.h */,
 				784AEF1B1FD02B3500075EEF /* ListViewController.m */,
 				7805E8C91FC47ABA00281CCE /* RecipeViewController.h */,
@@ -309,9 +309,9 @@
 				781E8D421FB9E81E00428872 /* AppDelegate.m in Sources */,
 				784AEF1C1FD02B3500075EEF /* ListViewController.m in Sources */,
 				781E8D3F1FB9E81E00428872 /* main.m in Sources */,
+				780642051FD7111F00E0BA33 /* MealPlanViewController.m in Sources */,
 				7827C8421FBDBCFB000D9B55 /* Ingredient.m in Sources */,
 				7805E8CB1FC47ABB00281CCE /* RecipeViewController.m in Sources */,
-				781889071FCDCC85001B448E /* PlanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
