@@ -30,6 +30,7 @@
 //Implementation for the plus and minus buttons
 
 
+#pragma mark Chilli Button
 - (IBAction)AddChilliButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
@@ -64,7 +65,7 @@
 
 
 
-
+#pragma mark Risotto Button
 - (IBAction)AddRisottoButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
@@ -102,7 +103,7 @@
 
 
 
-
+#pragma mark StirFry Button
 - (IBAction)AddStirFryButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
@@ -136,7 +137,7 @@
 
 
 
-
+#pragma mark SpagBol Button
 - (IBAction)AddSpagBolButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
@@ -171,7 +172,7 @@
 
 
 
-
+#pragma mark Currt Button
 - (IBAction)AddCurryButton:(UIButton *)sender {
 
     // When pressed adds the value to the budget label
@@ -206,7 +207,7 @@
 
 
 
-
+#pragma mark Burger Button
 - (IBAction)AddBurgerButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
@@ -238,7 +239,7 @@
 
 
 
-
+#pragma mark SweetSour Button
 - (IBAction)AddSweetSourButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
@@ -271,7 +272,7 @@
 
 
 
-
+#pragma mark Noodles Button
 - (IBAction)AddNoodlesButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
