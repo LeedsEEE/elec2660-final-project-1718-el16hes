@@ -10,7 +10,7 @@
 
 @interface MealPlanViewController : UIViewController
 
-
+//Connects the Labels for the MealPlanViewController
 @property (weak, nonatomic) IBOutlet UILabel *MealPlanLabel;
 @property (weak, nonatomic) IBOutlet UILabel *MondayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *TuesdayLabel;
