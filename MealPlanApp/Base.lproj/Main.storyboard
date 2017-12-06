@@ -215,9 +215,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meal Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-C7-h5X">
-                                <frame key="frameInset" minX="135" minY="28" width="157" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-C7-h5X">
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -228,7 +226,9 @@
                             <constraint firstItem="Ky4-cr-3HQ" firstAttribute="width" secondItem="SDe-Ot-5X2" secondAttribute="width" id="2dK-SV-dt8"/>
                             <constraint firstItem="Bgg-77-zxM" firstAttribute="leading" secondItem="SDe-Ot-5X2" secondAttribute="leading" id="4WK-KL-EMe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SDe-Ot-5X2" secondAttribute="trailing" id="5o7-Em-Heq"/>
+                            <constraint firstItem="CcW-C7-h5X" firstAttribute="top" secondItem="xF6-u8-y1T" secondAttribute="bottom" id="6be-Ng-6FQ"/>
                             <constraint firstItem="5L9-lC-T7z" firstAttribute="centerY" secondItem="pgo-Ih-8nV" secondAttribute="centerY" id="7oj-Ee-lhL"/>
+                            <constraint firstItem="CcW-C7-h5X" firstAttribute="centerX" secondItem="09Y-I5-7Hd" secondAttribute="centerX" id="8Cj-Ci-Olx"/>
                             <constraint firstItem="ua5-7Y-KAR" firstAttribute="leading" secondItem="eOy-bc-1K5" secondAttribute="leading" id="BAU-Hz-4nI"/>
                             <constraint firstItem="eOy-bc-1K5" firstAttribute="leading" secondItem="ojd-zZ-mRc" secondAttribute="leading" id="BSN-G5-NPl"/>
                             <constraint firstItem="5L9-lC-T7z" firstAttribute="width" secondItem="SDe-Ot-5X2" secondAttribute="width" id="CB5-el-vb8"/>
@@ -238,7 +238,7 @@
                             <constraint firstItem="T62-0k-yCK" firstAttribute="width" secondItem="oJQ-e1-bui" secondAttribute="width" id="IRz-1O-UST"/>
                             <constraint firstItem="qmW-jI-lcO" firstAttribute="top" secondItem="c8v-Ku-qMV" secondAttribute="bottom" constant="45" id="Ivu-37-X4o"/>
                             <constraint firstItem="c8v-Ku-qMV" firstAttribute="top" secondItem="pgo-Ih-8nV" secondAttribute="bottom" constant="45" id="LEX-AD-yxU"/>
-                            <constraint firstItem="ojd-zZ-mRc" firstAttribute="top" secondItem="xF6-u8-y1T" secondAttribute="bottom" constant="73" id="Paw-TP-Iw9"/>
+                            <constraint firstItem="ojd-zZ-mRc" firstAttribute="top" secondItem="xF6-u8-y1T" secondAttribute="bottom" constant="95" id="Paw-TP-Iw9"/>
                             <constraint firstItem="dbh-CF-D9u" firstAttribute="centerY" secondItem="c8v-Ku-qMV" secondAttribute="centerY" id="QGQ-GX-N7e"/>
                             <constraint firstItem="9rk-7B-9HM" firstAttribute="leading" secondItem="qmW-jI-lcO" secondAttribute="leading" id="RCF-Ab-HuJ"/>
                             <constraint firstItem="dbh-CF-D9u" firstAttribute="width" secondItem="5L9-lC-T7z" secondAttribute="width" id="RQn-Oq-T7v"/>

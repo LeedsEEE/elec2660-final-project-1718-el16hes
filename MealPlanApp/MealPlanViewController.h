@@ -22,7 +22,7 @@
 
 
 
-
+//Connects the text fields to the MealPlanViewController
 @property (weak, nonatomic) IBOutlet UITextField *MondayText;
 @property (weak, nonatomic) IBOutlet UITextField *TuesdayText;
 @property (weak, nonatomic) IBOutlet UITextField *WednesdayText;

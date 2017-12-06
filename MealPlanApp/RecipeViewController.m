@@ -30,6 +30,8 @@
 
 //Implementation for each of the URL links //The method for the Url buttons was obtained from https://youtu.be/Zs-CyHPpUQ4 by Spotless iCode
 
+
+#pragma mark Chilli URL
 - (IBAction)ChilliButton:(UIButton *)sender {
     
      NSURL *ChilliRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/3228/chilli-con-carne"]; //Sets the link for the chilli button
@@ -39,6 +41,9 @@
     
 }
 
+
+
+#pragma mark Risotto URL
 - (IBAction)RisottoButton:(UIButton *)sender {
     
     NSURL *RisottoRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1221/easy-risotto-with-bacon-and-peas"]; //Sets the link for the risotto button
@@ -49,6 +54,9 @@
     
 }
 
+
+
+#pragma mark StirFry URL
 - (IBAction)StirFryButton:(UIButton *)sender {
     
     NSURL *StirFryRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/5140/chicken-stirfry-in-4-easy-steps"]; //Sets the link for the stir-fry button
@@ -59,6 +67,9 @@
     
 }
 
+
+
+#pragma mark SpagBol URL
 - (IBAction)SpagBolButton:(UIButton *)sender {
     
     NSURL *SpagBolRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1556/sosimple-spaghetti-bolognese"]; //Sets the link for the spag bol button
@@ -68,6 +79,9 @@
 
 }
 
+
+
+#pragma mark Curry URL
 - (IBAction)CurryButton:(UIButton *)sender {
     
     NSURL *CurryRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1993658/homestyle-chicken-curry"]; //Sets the link for the curry button
@@ -77,6 +91,9 @@
     
 }
 
+
+
+#pragma mark Burger URL
 - (IBAction)Burgers:(UIButton *)sender {
     NSURL *BurgerRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1514/beef-burgers-learn-to-make"]; //Sets the link for the burger button
     
@@ -86,15 +103,20 @@
         
 }
 
+
+
+#pragma mark SweetSour URL
 - (IBAction)SweetSourButton:(UIButton *)sender {
     NSURL *SweetSourRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1472/easy-sweet-and-sour-chicken"]; //Sets the link for the sweet sour button
     
     [[UIApplication sharedApplication] openURL:SweetSourRecipe options:@{} completionHandler:^(BOOL success) {
     }]; //Tells the button to open the link
     
-    
 }
 
+
+
+#pragma mark Noodles URL
 - (IBAction)NoodlesButton:(UIButton *)sender {
         NSURL *NoodlesRecipe = [NSURL URLWithString:@"https://www.bbcgoodfood.com/recipes/1813/easy-noodles"]; //Sets the link for the noodles button
         
