@@ -9,7 +9,7 @@
 
 //BudgetCalculator
 
-//When each of the buttons are pressed by the user the value of the shopping budget will change
+//When each of the buttons are pressed by the user the value of the shopping budget and the counters will change
 
 #import "ListViewController.h"
 
@@ -33,7 +33,7 @@
 - (IBAction)AddChilliButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.45];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+2.70];
     
     //Also adds one to the counter
     _ChilliCounter.text = [NSString stringWithFormat:@"%d",[_ChilliCounter.text intValue]+1];
@@ -45,10 +45,18 @@
 - (IBAction)MinusChilliButton:(UIButton *)sender {
    
     
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.45];
+    if ([_ChilliCounter.text intValue] >0) { //If statement so it only minuses if the value is bigger than 0
+        
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-2.70];
 
     //Also minuses one from the counter
     _ChilliCounter.text = [NSString stringWithFormat:@"%d",[_ChilliCounter.text intValue]-1];
+
+  }
+    else //if the counter is at zero display 0
+    {
+        _ChilliCounter.text = [NSString stringWithFormat:@"0%d",[_ChilliCounter.text intValue]];
+    }
 
 }
 
@@ -60,7 +68,7 @@
 - (IBAction)AddRisottoButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+5.00];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.00];
     
     //Also adds one to the counter
    _RisottoCounter.text = [NSString stringWithFormat:@"%d",[_RisottoCounter.text intValue]+1];
@@ -69,12 +77,24 @@
 
 - (IBAction)MinusRisottoButton:(UIButton *)sender {
     
+     if ([_RisottoCounter.text intValue] >0) { //If statement so it only minuses if the value is bigger than 0
+    
     //When pressed minuses the value to the budget label
-      _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-5.00];
+      _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.00];
     
     //Also minuses one to the counter
     _RisottoCounter.text = [NSString stringWithFormat:@"%d",[_RisottoCounter.text intValue]-1];
+         
+     }
+    
+     else //if the counter is at zero display 0
+     {
+         _RisottoCounter.text = [NSString stringWithFormat:@"0%d",[_RisottoCounter.text intValue]];
+     }
+
+    
 }
+
 
 
 
@@ -86,7 +106,7 @@
 - (IBAction)AddStirFryButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+4.95];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+2.95];
     
     //Also adds one to the counter
     _StirFryCounter.text = [NSString stringWithFormat:@"%d",[_StirFryCounter.text intValue]+1];
@@ -95,15 +115,22 @@
 
 - (IBAction)MinusStirFryButton:(UIButton *)sender {
     
+      if ([_StirFryCounter.text intValue] >0) { //If statement so it only minuses if the value is bigger than 0
+    
     //When pressed minuses the value to the budget label
-      _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-4.95];
+      _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-2.95];
     
     //Also minuses one to the counter
     _StirFryCounter.text = [NSString stringWithFormat:@"%d",[_StirFryCounter.text intValue]-1];
     
+  }
+
+      else //if the counter is at zero display 0
+      {
+          _StirFryCounter.text = [NSString stringWithFormat:@"0%d",[_StirFryCounter.text intValue]];
+      }
+    
 }
-
-
 
 
 
@@ -113,22 +140,30 @@
 - (IBAction)AddSpagBolButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
-     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.70];
+     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.20];
     
     //Also adds one to the counter
-    _SpagBolCounter.text = [NSString stringWithFormat:@"%d",[_StirFryCounter.text intValue]+1];
+    _SpagBolCounter.text = [NSString stringWithFormat:@"%d",[_SpagBolCounter.text intValue]+1];
 }
 
 
 - (IBAction)MinusSpagBolButton:(UIButton *)sender {
     
+     if ([_SpagBolCounter.text intValue] >0) { //If statement so it only minuses if the value is bigger than 0
+    
     //When pressed minuses the value to the budget label
-       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.70];
+       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.20];
     
     //Also minuses one to the counter
     _SpagBolCounter.text = [NSString stringWithFormat:@"%d",[_SpagBolCounter.text intValue]-1];
     
+     }
+     else //if the counter is at zero display 0
+     {
+         _SpagBolCounter.text = [NSString stringWithFormat:@"0%d",[_SpagBolCounter.text intValue]];
+     }
 }
+
 
 
 
@@ -140,7 +175,7 @@
 - (IBAction)AddCurryButton:(UIButton *)sender {
 
     // When pressed adds the value to the budget label
-     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+4.55];
+     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.55];
     
     //Also adds one to the counter
     _CurryCounter.text = [NSString stringWithFormat:@"%d",[_CurryCounter.text intValue]+1];
@@ -150,11 +185,18 @@
 
 - (IBAction)MinusCurryButton:(UIButton *)sender {
     
+    if ([_CurryCounter.text intValue] >0) { //If statement so it only minuses if the value is bigger than 0
+    
     //When pressed minuses the value to the budget label
-     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-4.55];
+     _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.55];
     
     //Also minuses one to the counter
     _CurryCounter.text = [NSString stringWithFormat:@"%d",[_CurryCounter.text intValue]-1];
+    }
+    else //if the counter is at zero display 0
+    {
+        _CurryCounter.text = [NSString stringWithFormat:@"0%d",[_CurryCounter.text intValue]];
+    }
 }
 
 
@@ -168,7 +210,7 @@
 - (IBAction)AddBurgerButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
-         _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+5.40];
+         _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.90];
     
     //Also adds one to the counter
     _BurgerCounter.text = [NSString stringWithFormat:@"%d",[_BurgerCounter.text intValue]+1];
@@ -176,12 +218,18 @@
 
 - (IBAction)MinusBurgerButton:(UIButton *)sender {
     
+    if ([_BurgerCounter.text intValue] >0) { //If statement so it only minuses if the value is bigger than 0
+    
     //When pressed minuses the value to the budget label
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-5.40];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.90];
     
     //Also minuses one to the counter
     _BurgerCounter.text = [NSString stringWithFormat:@"%d",[_BurgerCounter.text intValue]-1];
-    
+    }
+    else //if the counter is at zero display 0
+    {
+        _BurgerCounter.text = [NSString stringWithFormat:@"0%d",[_BurgerCounter.text intValue]];
+    }
 }
 
 
@@ -194,7 +242,7 @@
 - (IBAction)AddSweetSourButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
-       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+4.55];
+       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.55];
     
     //Also adds one to the counter
     _SweetSourCounter.text = [NSString stringWithFormat:@"%d",[_SweetSourCounter.text intValue]+1];
@@ -203,11 +251,18 @@
 
 - (IBAction)MinusSweetSourButton:(UIButton *)sender {
     
+    if ([_SweetSourCounter.text intValue] >0) { //If statement so it only minuses if the value is bigger than 0
+    
     //When pressed minuses the value to the budget label
-        _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-4.55];
+        _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.55];
     
     //Also minuses one to the counter
     _SweetSourCounter.text = [NSString stringWithFormat:@"%d",[_SweetSourCounter.text intValue]-1];
+    }
+    else //if the counter is at zero display 0
+    {
+        _SweetSourCounter.text = [NSString stringWithFormat:@"0%d",[_SweetSourCounter.text intValue]];
+    }
 }
 
 
@@ -220,7 +275,7 @@
 - (IBAction)AddNoodlesButton:(UIButton *)sender {
     
     // When pressed adds the value to the budget label
-    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+3.50];
+    _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]+2.50];
     
     //Also adds one to the counter
     _NoodlesCounter.text = [NSString stringWithFormat:@"%d",[_NoodlesCounter.text intValue]+1];
@@ -229,11 +284,18 @@
 
 - (IBAction)MinusNoodlesButton:(UIButton *)sender {
     
+    if ([_NoodlesCounter.text intValue] >0) { //If statement so it only minuses if the value is bigger than 0
+    
     //When pressed minuses the value to the budget label
-       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-3.50];
+       _BudgetLabel.text = [NSString stringWithFormat:@"%.2f",[_BudgetLabel.text floatValue]-2.50];
     
     //Also minuses one to the counter
     _NoodlesCounter.text = [NSString stringWithFormat:@"%d",[_NoodlesCounter.text intValue]-1];
+    }
+    else //if the counter is at zero display 0
+    {
+        _NoodlesCounter.text = [NSString stringWithFormat:@"0%d",[_NoodlesCounter.text intValue]];
+    }
 }
 
 
