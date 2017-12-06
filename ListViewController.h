@@ -21,6 +21,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *BurgerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *SweetSourLabel;
 @property (weak, nonatomic) IBOutlet UILabel *NoodlesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ChilliCounter;
+@property (weak, nonatomic) IBOutlet UILabel *RisottoCounter;
+@property (weak, nonatomic) IBOutlet UILabel *StirFryCounter;
+@property (weak, nonatomic) IBOutlet UILabel *SpagBolCounter;
+@property (weak, nonatomic) IBOutlet UILabel *CurryCounter;
+@property (weak, nonatomic) IBOutlet UILabel *BurgerCounter;
+@property (weak, nonatomic) IBOutlet UILabel *SweetSourCounter;
+@property (weak, nonatomic) IBOutlet UILabel *NoodlesCounter;
+
+
+
 
 
 //Connects the buttons for the ListViewController
