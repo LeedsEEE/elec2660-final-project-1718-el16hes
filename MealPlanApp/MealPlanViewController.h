@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MealPlanViewController : UIViewController
+@interface MealPlanViewController : UIViewController <UITextFieldDelegate>
 
 //Connects the Labels for the MealPlanViewController
 @property (weak, nonatomic) IBOutlet UILabel *MealPlanLabel;
