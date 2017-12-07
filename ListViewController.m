@@ -9,7 +9,7 @@
 
 //BudgetCalculator
 
-//When each of the buttons are pressed by the user the value of the shopping budget and the counters will change
+//When each of the buttons are pressed by the user the value of the meal will be added/minused from the shopping budget and the counters will change accordingly
 
 #import "ListViewController.h"
 
