@@ -8,7 +8,7 @@
 
 #import "RecipeViewController.h"
 
-//RecipeView
+//List of Recipe Links
 
 //Contains a list of all the meals available each of which are made out of buttons. When pressed the buttons will take you to a website with the recipe for that meal
 
@@ -25,7 +25,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
 
 
 //Implementation for each of the URL links //The method for the Url buttons was obtained from https://youtu.be/Zs-CyHPpUQ4 by Spotless iCode

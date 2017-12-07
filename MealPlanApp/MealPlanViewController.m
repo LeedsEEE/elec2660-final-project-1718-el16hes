@@ -8,6 +8,10 @@
 
 #import "MealPlanViewController.h"
 
+//Meal Plan
+
+//Contains text fields next to each of the days of the week that can be edited to enter meals of your choice
+
 @interface MealPlanViewController ()
 
 @end
@@ -40,7 +44,6 @@
     [textField resignFirstResponder];
     return YES;
 }
-
 
 
 
